@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/67a619b39c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/Style.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+   
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="bg">
+            <div class="layer">
+                <i class="fas fa-layer-group"></i>
+            </div>
+
+            <div class="homepage">
+                <h1>We Design and Develop</h1>
+                <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Quasi corrupti odit dolorem nesciunt aliquam,
+                     eius vitae error deleniti laboriosam quidem.
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Quasi corrupti odit dolorem nesciunt aliquam,
+                     eius vitae error deleniti laboriosam quidem.
+                </p>
+                <button class="contactbtn"><a href="#"></a>Contact Us</button>
+            </div>
+        </section>
+    
+        <section>
+            <div class="aboutpage">
+                <h1>About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+                     Unde molestias, blanditiis aliquid omnis sunt quisquam odio veritatis reprehenderit ducimus nulla
+                     rerum delectus qui in fugiat
+                    enim aut beatae exercitationem libero.
+                </p>
+                <img src="img/signature.png" alt="signture"/>
+    
+            </div>
+        </section>
+    
+        <section class="prog">
+                <div class="contentprog">
+                    <h1>Professional Skills</h1>
+                    <label>UI/UX DESIGN 75%</label> <br>
+                    <progress class="prog1" value="75" max="100"></progress> <br>
+                  
+                    <label>WEB DEVELOPMENT 90%</label> <br> 
+                    <progress class="prog1" value="90" max="100"></progress><br>
+    
+                    <label>MARKETING 65%</label> <br>
+                    <progress class="prog1" value="65" max="100"></progress>
+    
+                </div>
+        </section>
+    
+        <div class="blueicone">
+    
+            <i class="fas fa-toolbox"></i>
+            <div>
+                <p>548</p>
+                <p>projects Completed</p>
+            </div>
+    
+    
+            <i class="far fa-clock"></i>
+            <div>
+                <p>1465</p>
+                <p>working hours</p>
+            </div>
+    
+            <i class="far fa-star"></i>
+            <div>
+                <p>612</p>
+                <p>positive freedbacks </p>
+            </div>
+    
+            
+            <i class="far fa-heart"></i>
+            <div>
+                <p>735</p>
+                <p>happy clients </p>
+            </div>
+    
+        </div>
+    
+        <section class="picgrid">
+           
+            <div class="grid" id="grid1">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (1).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic1">
+            </div>
+
+            <div class="grid" id="grid2">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (2).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic2">
+            </div>
+
+            <div class="grid" id="grid3">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (3).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic3">
+            </div>
+
+            <div class="grid" id="grid4">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (4).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic4">
+            </div>
+
+            <div class="grid" id="grid5">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (5).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic5">
+            </div>
+
+            <div class="grid" id="grid6">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (6).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic6">
+            </div>
+
+            <div class="grid" id="grid7">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (7).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic7">
+            </div>
+
+            <div class="grid" id="grid8">
+                <div class="overlay"><i class="fas fa-eye"></i></div>
+                <img src="img/picslide (8).jpg" onclick="onClick(this)" class="modal-hover-opacity" id="myimage" alt="pic8">
+            </div>
+
+            <!-- The Modal -->
+            <div id="modal01" class="modal" onclick="this.style.display='none'">
+                <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="modal-content">
+                  <img id="img01" style="max-width:100%">
+                </div>
+              </div>
+
+            <div class="loaddiv">
+               <a href="#">LOAD MORE WORK</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="otherwork">
+                <h4>Our Work Process</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, tenetur.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                 <video src=""></video>
+            </div>
+        </section>
+
+        <section class="iconbar">
+            
+            <div class="icon1">
+                <i class="far fa-gem"></i>
+                <h5>UI/UX DESIGN</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="icon2">
+                <i class="fas fa-code"></i>
+                <h5>WEB DESIGN</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="icon3">
+                <i class="fas fa-mobile-alt"></i>
+                <h5>APP/MOBILE</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="icon4">
+                <i class="fas fa-gamepad"></i>
+                <h5>GAME DESIGN</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="icon5">
+                <i class="fas fa-paper-plane"></i>
+                <h5>SEO/ MARKEtING</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="icon6">
+                <i class="fas fa-star"></i>
+                <h5>PHOTOGRAPHY</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="icon7">
+                <i class="fas fa-magic"></i>
+                <h5>GRAPHIC DESIGN</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="icon8">
+                <i class="fas fa-paint-brush"></i>
+                <h5>ILLUSTRATIONS</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="bluesec">
+                <p>
+                   " Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Eum aspernatur esse et, sapiente cupiditate ratione vitae tempora 
+                     nobis nemo ab molestias nam id, architecto est iste quibusdam
+                     distinctio debitis animi? Possimus quas ut, quae commodi dolore
+                     nam delectus maiores optio
+                     similique doloremque quis quaerat laudantium placeat eaque. 
+                     Facilis, illo pariatur!"        
+                </p>
+            </div>
+        </section>
+
+        <div class="brand">
+
+            <div>
+                <img src="img/brand (1)hover.png" alt="company1">
+            </div>
+
+            <div>
+                <img src="img/brand (2)hover.png" alt="company2">
+            </div>
+
+            <div>
+                <img src="img/brand (3)hover.png" alt="company3">
+            </div>
+
+            <div>
+                <img src="img/brand (4)hover.png" alt="company4">
+            </div>
+
+            <div>
+                <img src="img/brand (5)hover.png" alt="company5">
+            </div>
+        </div>
+
+        <section>
+            <div class="formcontact">
+
+            </div>
+        </section>
+        
+
+
+
+
+    </main>  
+    <script src="js.js"></script>
+</body>
+</html>

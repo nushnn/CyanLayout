@@ -1,0 +1,430 @@
+/*............... Reset HTML............ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ............Default................. */
+
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(18, 174, 185) ;
+}
+
+/* ...............Navbar.............. */
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    float: right;
+    top: 0;
+    padding: 1rem;
+    margin: 10px;
+}
+#navbar a{
+    color: black;
+    font-weight: bolder;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar ul li a{
+    padding: 10px;
+    margin: 20px;
+}
+
+#navbar ul li a:hover{
+    color: rgb(18, 174, 185);
+    font-size: 20px;
+     /* shadow */
+     -webkit-box-shadow: -2px 0px 67px -15px rgba(6,199,199,0);
+    -moz-box-shadow: -2px 0px 67px -15px rgba(6,199,199,0);
+    box-shadow: -2px 0px 67px -15px rgba(6,199,199,0);
+    
+}
+
+.layer{
+    float: left;
+    padding-top: 15px;
+    padding-left: 40px;
+    font-size: 25px;
+}
+
+.layer:hover{
+    color: rgb(18, 174, 185);
+}
+/*.............. Homepage ........... */
+
+.bg{
+    background:white url('../img/pexels-pixabay-509922.jpg')no-repeat center center/cover;
+    height: 100vh;
+}
+.homepage{
+    padding:250px;
+    padding-left: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.homepage h1{
+    font-size: 35px;
+    color: black;
+}
+.homepage h1:hover{
+   
+    color: rgb(102, 102, 102);
+}
+
+.homepage p{
+    font-size: 20px;
+    color: gray;
+    margin-top: 20px;
+     
+}
+
+
+.contactbtn{
+    background-color:rgb(18, 174, 185) ;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.contactbtn:hover{
+    background-color: rgb(12, 106, 112);
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+
+    /* shadow */
+    -webkit-box-shadow: -2px 0px 67px -15px rgba(6,199,199,1);
+    -moz-box-shadow: -2px 0px 67px -15px rgba(6,199,199,1);
+    box-shadow: -2px 0px 67px -15px rgba(6,199,199,1);
+
+}
+
+/* .............about................. */
+
+.aboutpage{
+
+    padding:50px;
+    text-align: center;
+}
+
+.aboutpage h1{
+
+    font-size: 30px;
+}
+
+.aboutpage h1:hover{
+
+    color: rgb(102, 102, 102);
+}
+
+.aboutpage p{
+
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+/* .........progpage......... */
+
+.prog{
+    background: white url('../img/pexels-scott-webb-403571.jpg')no-repeat center center/cover;
+    height: 100vh;
+    
+}
+
+.contentprog{
+    padding-top: 200px ;
+    padding-left: 150px;
+
+}
+
+.contentprog h1{
+    font-size: 30px; 
+    margin-bottom: 30px;
+      
+}
+
+
+.contentprog h1:hover{
+    color: rgb(102, 102, 102);
+}
+
+.prog1{
+    margin-bottom: 40px;
+    
+}
+
+progress {
+    border: none;
+    width: 500px;
+    background-color: grey;
+    color: rgb(18, 174, 185);
+    height: 6px;
+    
+}
+  
+progress::-webkit-progress-value {
+    background:rgb(18, 174, 185);
+    
+}
+  
+progress::-moz-progress-bar {
+    background: rgb(18, 174, 185);
+}
+
+.blueicone{
+    height: 30vh;
+    background: rgb(18, 174, 185);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+}
+
+.blueicone div {
+    padding-right: 40px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blueicone i{
+    font-size: 40px;
+}
+
+.blueicone p{
+    font-size: 20px;
+}
+
+.picgrid{ 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid{
+    background: black;
+}
+
+.grid img{
+    display: block;
+    opacity: 1;
+    width: 379px;
+    height: 300px;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.grid img:hover{
+    opacity: 0.3;
+     
+}
+ .fa-eye{
+     color: grey;
+ }
+.overlay{
+    position: absolute;
+    margin: 130px 0px 0px 150px;
+    font-size: 40px; 
+    opacity: 0;
+    transition: .3s ease;
+}
+.grid:hover .overlay{
+    opacity: 1;
+}
+
+.loaddiv{
+    margin: 0;
+    border: none;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    background: rgb(201, 198, 198);
+    color: gray;
+}
+
+/* modal css */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+}
+
+
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.otherwork{
+   padding: 60px;  
+   
+}
+
+.otherwork p{
+    padding-top: 20px;
+    font-size:15px;
+    color: grey;
+    text-align: center;
+    overflow: hidden; 
+   text-overflow: ellipsis;
+   
+}
+
+.otherwork h4{
+    font-size: 40px;
+    text-align: center;
+}
+ .otherwork h4:hover{
+     color: rgb(102, 102, 102); ;
+ }
+
+ .otherwork video{
+     margin: 70px 250px 70px 200px;
+     background: #000;
+     height: 500px;
+     width: 1000px;
+ }
+.iconbar{
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    background: #e8e8e8;
+    flex-wrap: wrap;   
+}
+ .iconbar div{
+     padding: 20px;
+     margin: 50px;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: baseline;
+ }
+ .iconbar i{
+     font-size: 30px;
+     font-style: normal;
+     
+ }
+
+ .iconbar i:hover{
+   color:  rgb(18, 174, 185);
+    
+}
+.iconbar h5{
+    padding-top: 10px;
+}
+ .iconbar p{
+     padding-top: 10px;
+     color: grey;
+ }
+
+ .bluesec{
+     background: rgb(18, 174, 185);
+     padding: 150px;
+     text-align: center;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     color: white;
+ }
+
+ .brand{
+     display: flex;
+     padding: 70px;
+     justify-content: center;
+ }
+.brand div {
+    height: 150px;
+    width: 150px;
+    margin-right: 70px;
+    margin-left:70px ;
+}
+.brand img{
+    height: 150px;
+    width: 150px;
+}
+.brand div:nth-child(1):hover{
+    content: url('../img/brand\ \(1\).png');
+}
+
+.brand div:nth-child(2):hover{
+    content: url('../img/brand\ \(2\).png');
+}
+
+.brand div:nth-child(3):hover{
+    content: url('../img/brand\ \(3\).png');
+}
+
+
+.brand div:nth-child(4):hover{
+    content: url('../img/brand\ \(4\).png');
+}
+
+
+.brand div:nth-child(5):hover{
+    content: url('../img/brand\ \(5\).png');
+}
+
+
+.formcontact{
+    background: #e8e8e8;
+    padding: 100px;
+
+}
