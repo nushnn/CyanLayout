@@ -334,7 +334,7 @@ progress::-moz-progress-bar {
     text-align: center;
 }
  .otherwork h4:hover{
-     color: rgb(102, 102, 102); ;
+     color: rgb(102, 102, 102) ;
  }
 
  .otherwork video{
@@ -378,10 +378,12 @@ progress::-moz-progress-bar {
 
  .bluesec{
      background: rgb(18, 174, 185);
-     padding: 150px;
+     padding: 50px 0px 80px 0px;
      text-align: center;
      overflow: hidden;
      text-overflow: ellipsis;
+     white-space: pre-line;
+     font-size: 25px;
      color: white;
  }
 
@@ -422,9 +424,122 @@ progress::-moz-progress-bar {
     content: url('../img/brand\ \(5\).png');
 }
 
+.bg-form{
+    background: #e8e8e8;
+    padding: 20px;
+}
+
 
 .formcontact{
-    background: #e8e8e8;
-    padding: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    white-space: pre-line;  
+}
 
+.formcontact h4{
+    text-align: center;
+    padding-bottom: 4px;
+    font-size: 30px; 
+}
+
+.formcontact h4:hover{
+    color: rgb(102, 102, 102);
+}
+
+.formcontact p{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
+
+
+.formgroup{
+    
+    padding: 20px;
+    width:600px;
+    margin: auto;
+}
+
+input{ 
+    width:100%;
+    padding: 20px;
+    margin-bottom:15px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    font:18px Raleway; 
+}
+
+#name , #email{
+    margin-right: 3px;
+    margin-left: 3px;
+    
+}
+.inp{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+  
+input[type="submit"]{
+    background:rgb(18, 174, 185);
+    color:#FFF;
+    width:100%;
+    padding: 15px;
+    font-weight:700;
+    opacity:0.8;
+    font-size: 20px;
+    
+    
+}
+
+.txtarea{
+    resize: none;
+    width:100%;
+    padding: 20px;
+    margin-bottom:10px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    font:18px Raleway;
+}
+  
+  
+input[type="submit"]:hover{
+  cursor:pointer;
+  opacity:1;
+  background-color: rgb(12, 106, 112);
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+
+
+}
+  
+input[type="text"]:focus{
+    
+    border-left:8px solid rgb(18, 174, 185);
+    -webkit-transition:0.4s ease;
+}
+  
+input[type="email"]:focus{
+    
+    border-left:8px solid rgb(18, 174, 185);
+    -webkit-transition:0.4s ease;
+}
+
+
+textarea:focus{
+    border-left:8px solid rgb(18, 174, 185);
+    -webkit-transition:0.4s ease;
+
+}
+
+/* .................footer................. */
+
+.bg-foot{
+    background: #212121;
+    height: 30vh;
 }
