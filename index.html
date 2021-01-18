@@ -9,26 +9,41 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./Css/Style.css"/>
 
-    <title>Document</title>
+    <title>Web Art| Home </title>
+
+
+    <link rel="shortcut icon" href="img/icone web art - Copy.ico">
 </head>
 <body>
    
     <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Process</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#worklink">Work</a></li>
+            <li><a href="#processlink">Process</a></li>
+            <li><a href="#serviceslink">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
     <main>
         <section class="bg">
-            <div class="layer">
-                <i class="fas fa-layer-group"></i>
-            </div>
+            
+          
+            <div class="feed-in">
+                <ul>
+                  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
+                  <li><i class="fab fa-google-plus-g" aria-hidden="true"></i></li>
+                  
+                </ul>
+              </div>
+
 
             <div class="homepage">
                 <h1>We Design and Develop</h1>
@@ -40,7 +55,7 @@
                      Quasi corrupti odit dolorem nesciunt aliquam,
                      eius vitae error deleniti laboriosam quidem.
                 </p>
-                <button class="contactbtn"><a href="#"></a>Contact Us</button>
+               <button class="contactbtn"><a href="contact.html">Contact Us</a></button> 
             </div>
         </section>
     
@@ -103,7 +118,7 @@
     
         </div>
     
-        <section class="picgrid">
+        <section class="picgrid" id="worklink">
            
             <div class="grid" id="grid1">
                 <div class="overlay"><i class="fas fa-eye"></i></div>
@@ -154,11 +169,11 @@
               </div>
 
             <div class="loaddiv">
-               <a href="#">LOAD MORE WORK</a>
+               <a href="project.html">LOAD MORE WORK</a>
             </div>
         </section>
 
-        <section>
+        <section id="processlink">
             <div class="otherwork">
                 <h4>Our Work Process</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, tenetur.
@@ -168,7 +183,7 @@
             </div>
         </section>
 
-        <section class="iconbar">
+        <section class="iconbar" id="serviceslink">
             
             <div class="icon1">
                 <i class="far fa-gem"></i>
@@ -221,15 +236,55 @@
 
         <section>
             <div class="bluesec">
-                <p>
-                   " Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Eum aspernatur esse et, sapiente cupiditate ratione vitae tempora 
-                     nobis nemo ab molestias nam id, architecto est iste quibusdam
-                     distinctio debitis animi? Possimus quas ut, quae commodi dolore
-                     nam delectus maiores optio
-                     similique doloremque quis quaerat laudantium placeat eaque. 
-                     Facilis, illo pariatur!"        
-                </p>
+
+                <ul class="slides">
+                    <input type="radio" name="radio-btn" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Exercitationem, nostrum accusamus. Quaerat tenetur repellat id.
+                          </p>
+                        </div>
+                    </li>
+                
+                    
+                
+                    <input type="radio" name="radio-btn" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Exercitationem, nostrum accusamus. Quaerat tenetur repellat id.
+                            </p>
+                         
+                        </div>
+                        
+                    </li>
+                
+            
+                
+                    <input type="radio" name="radio-btn" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Exercitationem, nostrum accusamus. Quaerat tenetur repellat id.
+                            </p>
+                        
+                        </div>   
+                    </li>
+                
+                    <li class="nav-dots">
+                      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                    </li>
+                </ul>
+
+                
+    
+
             </div>
         </section>
 
@@ -281,8 +336,55 @@
         </section>
 
         <footer class="bg-foot">
-            <div>
+            <div class="col1">
+                <h2>Piroll Design , INC.</h2>
+                <p>
+                    &#169; 2021 Piroll All rights rescrved.
+                </p>
+                <p>
+                    Designed by Nooshin
+                </p>
+            </div>
 
+            <div class="col2">
+               
+                <p>
+                   nooshin78kabiri@gmail.com
+                </p>
+                <p>
+                   +44 987 056 908
+                </p>
+            </div>
+
+            <div class="col3">
+                <a href="project.html"><span>Projects</span></a>
+                <a href="about.html"><span>About</span></a>
+                <a href="#serviceslink"><span>Services</span></a>
+                <a href="#"><span>Carreer</span></a>
+            </div>
+
+            <div class="col4">
+                <a href="#"><span>News</span></a>
+                <a href="#"><span>Events</span></a>
+                <a href="#"><span>Contact</span></a>
+                <a href="#"><span>Legals</span></a>
+            </div>
+
+          
+            <div class="col5">
+                <a href="#"><span>Facebook</span></a>    
+                <a href="#"><span>Twitter</span></a>
+                <a href="#"><span>Instagram</span></a>
+                <a href="#"><span>Pinterest</span></a>
+
+                <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+               
             </div>
 
         </footer>
