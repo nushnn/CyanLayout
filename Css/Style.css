@@ -16,12 +16,16 @@ html,body{
 
 a{
     text-decoration: none;
-    
+    color: black;
 }
 a:hover{
     color: rgb(18, 174, 185) ;
 }
+a:active{
+    color: rgb(18, 174, 185) ;
 
+}
+/*.............. scroll......... */
 ::-webkit-scrollbar {
     width: 12px;
     background: rgb(201, 198, 198);
@@ -33,6 +37,7 @@ a:hover{
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, rgb(12, 106, 112));
   }
+
 
 /* ...............Navbar.............. */
 
@@ -327,6 +332,7 @@ progress::-moz-progress-bar {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    
 }
 .grid{
     background: black;
@@ -873,7 +879,7 @@ textarea:focus{
 
 .navcontact ul li a:hover{
     color: rgb(18, 174, 185);
-    /* font-size: 20px; */
+    font-size: 20px;
      /* shadow */
      -webkit-box-shadow: -2px 0px 67px -15px rgba(6,199,199,0);
     -moz-box-shadow: -2px 0px 67px -15px rgba(6,199,199,0);
@@ -949,3 +955,113 @@ textarea:focus{
    border-radius: 50px;
 }
 
+
+/* ...............Aboutpage.............. */
+.mainposter{
+    background-color: #000;
+    z-index: 1;
+    
+}
+.posterabout{
+    background:url('../img/about poster.jpg')no-repeat center/cover;
+    height: 40vh;
+    opacity: 0.5;
+    
+}
+
+#paddposter{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.posterabout h1{
+    color: white;
+    
+}
+
+.posterabout p{
+    color: white;
+    overflow: hidden;
+    white-space: pre-line;
+}
+#aboutpic{
+    background: url('../img/about bg.jpg')no-repeat  center/cover;
+    height: 80vh;
+
+}
+
+.aboutpagebg{
+   
+    overflow: hidden;
+    white-space: pre-line;
+    padding: 100px;
+    color: black;   
+    
+}
+
+.projectorder{
+   text-align: center;
+    color: #000;
+    overflow: hidden;
+    white-space:pre-line;
+    padding: 50px;
+    
+}
+ .projectorder h1:hover{
+    color: rgb(102, 102, 102);
+
+ }
+
+ /* .........service page......... */
+
+ .gridbl{
+    background: rgb(18, 174, 185);
+ }
+
+.gridbl img{
+    display: block;
+    opacity: 1;
+    width: 379px;
+    height: 300px;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.gridbl img:hover{
+    opacity: 0.3;
+     
+}
+ .fa-eye{
+     color: white;
+ }
+.overlay{
+    position: absolute;
+    margin: 130px 0px 0px 150px;
+    font-size: 40px; 
+    opacity: 0;
+    transition: .3s ease;
+}
+.gridbl:hover .overlay{
+    opacity: 1;
+}
+
+.uiuxservic{
+    text-align: center;
+    overflow: hidden;
+    white-space: pre-line;
+    
+}
+.uiuxservic h1{
+    color:black ;
+    padding-top: 10px;
+}
+.uiuxservic p{
+    color: grey;
+    padding-top:0px;
+}
+
+.uiuxservic h1:hover{
+    color: rgb(102, 102, 102);;
+}
